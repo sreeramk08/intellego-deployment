@@ -78,8 +78,6 @@ def main():
     si = None
     si = connect.SmartConnect(host=options.hostname, user=options.username, pwd=options.password, sslContext=sslContext)
 
-
-    #si = connect.SmartConnect(host='10.0.155.52', user='skrishna@vsphere.local', pwd='Mchai2122')
     print("Time from vCenter: ")
     print(si.CurrentTime())
 
